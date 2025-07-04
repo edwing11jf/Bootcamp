@@ -1,0 +1,40 @@
+:root {
+  --white: #ffffff;
+  --yellow-color: #facc15;
+  --text-color: #334155;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.9), rgba(13, 148, 136, 0.9));
+}
+
+.logo-hover {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.logo-hover:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+.map-container {
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.divider {
+  border-top: 1px solid #ddd;
+}
+
+.footer-link {
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--yellow-color);
+  transform: translateX(4px);
+}
